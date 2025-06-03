@@ -1,0 +1,17 @@
+* how to express negative #
+** Default
+  0111 = 7
+  1111 = -7
+  01111 = 16
+  11111 = -16
+  
+** 2's complement expression
+   0111 = 7
+   0111 & 1001 = 10000 >> output = 0000
+   그래서 1001을 -7로 함
+   \
+   쉽게 연산하려면,
+   *비트 반전 후 1을 더하면 됨*
+
+* printf format
+  printf("%*d", a, b)
